@@ -1,0 +1,5 @@
+.idea
+*.zip
+*.cache
+Build/node_modules
+Build/package-lock.json
