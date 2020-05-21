@@ -12,6 +12,24 @@ lib.contentElement {
     partialRootPaths {
         30 = {$user_pizpalue.contentElement.fluidtemplate.partialRootPath}
     }
+
+    #:::::::::::::::::::::::
+    #: Set maximum image resolution(s)
+    #.
+#    settings {
+#        responsiveimages {
+#            variants {
+#                default {
+#                    breakpoint = 1200
+#                    width = 1800
+#                }
+#                large {}
+#                medium {}
+#                small {}
+#                extrasmall {}
+#            }
+#        }
+#    }
 }
 
 
