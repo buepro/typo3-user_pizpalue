@@ -88,7 +88,12 @@ page {
             style = default
             type =
         }
-        meta.enable = 0
+        meta {
+            enable = 0
+            navigationType = list
+            # navigationValue = list of page uid's
+            includeNotInMenu = 1
+        }
         language.enable = 1
     }
 }
