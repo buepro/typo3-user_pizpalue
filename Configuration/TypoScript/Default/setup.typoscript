@@ -87,6 +87,9 @@ page {
 # Various
 #=========================================================#
 
+# Increase level in subnavigation (side)
+page.10.dataProcessing.20.levels = 3
+
 
 #=========================================================#
 # Development settings
