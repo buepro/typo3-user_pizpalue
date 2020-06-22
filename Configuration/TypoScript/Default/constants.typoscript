@@ -55,7 +55,7 @@ user_pizpalue {
     contentElement.fluidtemplate {
         #layoutRootPath = EXT:user_pizpalue/Resources/Private/Layouts/ContentElements/
         #partialRootPath = EXT:user_pizpalue/Resources/Private/Partials/ContentElements/
-        #templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
+        templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
     }
 }
 
