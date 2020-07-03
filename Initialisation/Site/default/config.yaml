@@ -1,6 +1,9 @@
 rootPageId: 1
 base: /
-baseVariants: {  }
+baseVariants:
+  -
+    base: 'https://setup.url.ch'
+    condition: 'getenv("HTTP_HOST") == "setup.url.ch"'
 languages:
   -
     title: Deutsch
