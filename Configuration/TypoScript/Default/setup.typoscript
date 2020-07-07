@@ -70,7 +70,7 @@ page {
     #---------------------------------------------------------#
     # JS
     #---------------------------------------------------------#
-    #includeJSFooter.upGeneral = EXT:user_pizpalue/Resources/Public/JavaScripts/Dist/jquery.general.min.js
+    #includeJSFooter.upGeneral = EXT:user_pizpalue/Resources/Public/JavaScript/Dist/jquery.general.min.js
 
     #---------------------------------------------------------#
     # Template
@@ -96,5 +96,5 @@ page.10.dataProcessing.20.levels = 3
 #=========================================================#
 
 [{$pizpalue.agency.siteMode} == 1]
-    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:user_pizpalue/Configuration/TypoScript/Develop/setup.typoscript">
+    @import 'EXT:user_pizpalue/Configuration/TypoScript/Develop/setup.typoscript'
 [END]
