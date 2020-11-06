@@ -8,11 +8,11 @@
   "version": "10.0.0",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.2.1",
     "grunt-changelog": "^0.3.2",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-webfont": "^1.7.2"
+    "grunt-webfonts": "^3.0.1"
   }
 }
