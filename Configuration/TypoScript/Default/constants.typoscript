@@ -85,6 +85,7 @@ plugin.bootstrap_package.settings.scss {
 pizpalue.scaffold {
     #showFooter = 1
     footer {
+        rowClass = row
         leftColumnClass = col-md-4 ppc-left
         middleColumnClass = col-md-4 ppc-middle
         rightColumnClass = col-md-4 ppc-right
