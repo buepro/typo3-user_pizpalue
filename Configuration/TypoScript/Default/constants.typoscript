@@ -194,6 +194,14 @@ plugin.bootstrap_package.settings.scss {
 
 plugin.bootstrap_package.settings.scss {
     #---------------------------------------------------------#
+    # General
+    #---------------------------------------------------------#
+    // enable-rounded needs to be enabled for the border-radius to be used
+#    enable-rounded = 1
+#    border-radius = 4px
+#    border-radius-sm = 4px
+#    border-radius-lg = 4px
+    #---------------------------------------------------------#
     # Navbar
     #---------------------------------------------------------#
 #    navbar-nav-link-padding-x = 1rem
