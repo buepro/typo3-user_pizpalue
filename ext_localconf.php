@@ -43,4 +43,19 @@ defined('TYPO3_MODE') || die();
         }
     '));
     }
+
+    /**
+     * PageTS
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+        '@import "EXT:user_pizpalue/Configuration/TsConfig/Page/General.tsconfig"'
+    );
+
+    /**
+     * UserTS
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+        '@import "EXT:user_pizpalue/Configuration/TsConfig/User/General.tsconfig"'
+    );
+
 })();
