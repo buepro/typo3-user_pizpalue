@@ -42,9 +42,11 @@ defined('TYPO3_MODE') || die();
     /**
      * User TSconfig
      */
-//    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-//        '@import "EXT:user_pizpalue/Configuration/TsConfig/User/General.tsconfig"'
-//    );
+    if ((int) $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] === 1) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+            '@import "EXT:user_pizpalue/Configuration/TsConfig/User/General.tsconfig"'
+        );
+    }
 
     /**
      * EXT:form
