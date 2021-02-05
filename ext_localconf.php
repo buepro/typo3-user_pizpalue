@@ -9,10 +9,54 @@
 
 defined('TYPO3_MODE') || die();
 
-(function () {
+/**
+ * To easier locate code the closure defines it in the following order:
+ *   - Generally available items (extension configuration, icon registry)
+ *   - Extension `user_pizpalue` related items (TSConfig, TS)
+ *   - 3rd party extension related items (form, news)
+ *   - Events, hooks
+ *
+ * Uncomment the code as needed.
+ */
+(static function () {
+    /**
+     * Extension configuration
+     */
+//    $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+//        \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
+//    );
+//    $userPizpalueConfiguration = $extensionConfiguration->get('user_pizpalue');
 
     /**
-     * After extension installation handler
+     * Register icons
+     */
+//    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+
+    /**
+     * Page TSconfig
+     */
+//    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+//        '@import "EXT:user_pizpalue/Configuration/TsConfig/Page/General.tsconfig"'
+//    );
+
+    /**
+     * User TSconfig
+     */
+//    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+//        '@import "EXT:user_pizpalue/Configuration/TsConfig/User/General.tsconfig"'
+//    );
+
+    /**
+     * EXT:form
+     */
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('form')) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
+            '@import "EXT:user_pizpalue/Configuration/Form/Setup.typoscript"'
+        );
+    }
+
+    /**
+     * Signal afterExtensionInstall
      */
     $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
     $signalSlotDispatcher->connect(
@@ -21,41 +65,4 @@ defined('TYPO3_MODE') || die();
         \Buepro\UserPizpalue\Slot\ExtensionInstallUtility::class,
         'afterExtensionInstall'
     );
-
-    /**
-     * Registers custom EXT:form configuration
-     */
-    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('form')) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(trim('
-        module.tx_form {
-            settings {
-                yamlConfigurations {
-                    300 = EXT:user_pizpalue/Configuration/Form/CustomFormSetup.yaml
-                }
-            }
-        }
-        plugin.tx_form {
-            settings {
-                yamlConfigurations {
-                    300 = EXT:user_pizpalue/Configuration/Form/CustomFormSetup.yaml
-                }
-            }
-        }
-    '));
-    }
-
-    /**
-     * PageTS
-     */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '@import "EXT:user_pizpalue/Configuration/TsConfig/Page/General.tsconfig"'
-    );
-
-    /**
-     * UserTS
-     */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '@import "EXT:user_pizpalue/Configuration/TsConfig/User/General.tsconfig"'
-    );
-
 })();
