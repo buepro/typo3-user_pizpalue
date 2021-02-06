@@ -3,3 +3,7 @@
 *.cache
 Build/node_modules
 Build/package-lock.json
+.ddev
+!.ddev/config.yaml
+vendor
+composer-dev.lock

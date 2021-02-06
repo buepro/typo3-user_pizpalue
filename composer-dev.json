@@ -20,28 +20,19 @@
 			"role": "Developer"
 		}
 	],
-	"require": {
-		"typo3/cms-core": ">=10.4"
-	},
-	"replace": {
-		"buepro/typo3-user-pizpalue": "self.version"
-	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^2.16.3"
-	},
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "user_pizpalue"
-		}
-	},
-	"autoload": {
-		"psr-4": {
-			"Buepro\\UserPizpalue\\": "Classes"
-		}
 	},
 	"prefer-stable": true,
 	"support": {
 		"issues": "https://github.com/buepro/typo3-user_pizpalue/issues",
 		"source": "https://github.com/buepro/typo3-user_pizpalue"
+	},
+	"scripts": {
+		"fix:php:cs:dry": "./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config .php_cs.php -v --dry-run --using-cache false --diff --diff-format=udiff",
+		"fix:php:cs": "./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config .php_cs.php -v --using-cache false",
+		"check:php": "@fix:php:cs:dry",
+		"fix:php": "@fix:php:cs",
+		"uninstall": "rm -rf composer-dev.lock vendor && ls -l"
 	}
 }

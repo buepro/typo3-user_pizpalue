@@ -125,6 +125,31 @@ user_pizpalue {
 }
 ```
 
+## Development
+
+For smaller projects the following workflow might be of interest:
+
+### Setup development environment
+
+1. Adjust the header comment in `.php_cs.php`
+1. Create a ddev container: `ddev start`
+1. **Enter the container:** `docker exec -it -u root -w /var/www/html ddev-up-web bash`
+1. Set environment variable: `export COMPOSER=composer-dev.json && printenv | grep COMPOSER=`
+1. Install composer packages: `composer install`
+
+### Work in development environment
+
+1. Optional, check the code: `composer check:php`
+1. Correct the code: `composer fix:php`
+
+### Remove development environment
+
+1. Uninstall composer packages: `composer uninstall`
+1. Unset the environment variable: `unset COMPOSER | grep COMPOSER=`
+1. **Leave the container:** `exit`
+1. Stop the container: `ddev stop`
+
+
 ## Coding guidelines
 
 - Use the [coding guidelines defined by TYPO3](https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html).
@@ -136,10 +161,11 @@ user_pizpalue {
 - [TypoScript reference](https://docs.typo3.org/typo3cms/TyposcriptReference/)
 - [Fluid guide](https://docs.typo3.org/typo3cms/ExtbaseGuide/Fluid/)
 - [Fluid view helper reference](https://docs.typo3.org/typo3cms/ViewHelperReference/)
-- [VHS view helper reference](https://fluidtypo3.org/viewhelpers/vhs/)
+- [VHS view helper reference](https://viewhelpers.fluidtypo3.org/fluidtypo3/vhs/)
 - [TCA reference](https://docs.typo3.org/typo3cms/TCAReference/)
 - [TSconfig reference](https://docs.typo3.org/typo3cms/TSconfigReference/)
 - [Core API reference](https://docs.typo3.org/typo3cms/CoreApiReference/)
+- [Best practice example extension](https://gitlab.typo3.org/qa/example-extension)
 
 **For documentation**
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
