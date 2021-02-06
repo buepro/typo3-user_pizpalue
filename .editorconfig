@@ -1,5 +1,3 @@
-# EditorConfig is awesome: http://EditorConfig.org
-
 # top-most EditorConfig file
 root = true
 
@@ -7,83 +5,45 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
+indent_style = space
+indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# CSS-Files
-[*.css]
-indent_style = space
-indent_size = 4
-
-# HTML-Files
-[*.html]
-indent_style = space
-indent_size = 4
-
-# TMPL-Files
-[*.tmpl]
-indent_style = space
-indent_size = 4
-
-# LESS-Files
-[*.less]
-indent_style = space
-indent_size = 4
-
-# JS-Files
+# JS files
 [*.js]
-indent_style = space
-indent_size = 4
-
-# PHP-Files
-[*.php]
-indent_style = space
-indent_size = 4
-
-# MD-Files
-[*.md]
-indent_style = space
-indent_size = 4
-
-# ReST-Files
-[*.rst]
-indent_style = space
-indent_size = 3
-
-# TypoScript
-[*.typoscript]
-indent_style = space
-indent_size = 4
-
-# TSconfig
-[*.tsconfig]
-indent_style = space
-indent_size = 4
-
-# YML-Files
-[{*.yml,*.yaml}]
-indent_style = space
 indent_size = 2
+
+# JSON files
+[*.json]
+indent_style = tab
 
 # package.json
 [package.json]
-indent_style = space
 indent_size = 2
 
-# composer.json
-[composer.json]
-indent_style = space
-indent_size = 4
+# ReST files
+[*.rst]
+indent_size = 3
+max_line_length = 80
 
-# XLF-Files
-[*.xlf]
-indent_style = tab
-
-# SQL-Files
+# SQL files
 [*.sql]
 indent_style = tab
 indent_size = 2
 
+# TypoScript files
+[*.{typoscript,tsconfig}]
+indent_size = 2
+
+# YAML files
+[{*.yml,*.yaml}]
+indent_size = 2
+
+# XLF files
+[*.xlf]
+indent_style = tab
+
 # .htaccess
-[{_.htaccess,.htaccess}]
+[.htaccess]
 indent_style = tab
