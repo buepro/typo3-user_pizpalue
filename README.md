@@ -149,6 +149,12 @@ For smaller projects the following workflow might be of interest:
 1. **Leave the container:** `exit`
 1. Stop the container: `ddev stop`
 
+### Available linters
+
+- TyposScript: `composer lint:ts`
+- Yml and yaml: `composer lint:yaml`
+- Json: `composer lint:json`
+
 ## Coding guidelines
 
 - Use
