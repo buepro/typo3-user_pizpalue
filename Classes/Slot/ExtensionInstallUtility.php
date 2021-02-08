@@ -16,26 +16,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class ExtensionInstallUtility
 {
     /**
-     * Copies the default AdditionalConfiguration file.
-     *
-     * @return bool returns true if the default file has been copied
-     */
-    private function copyAdditionalConfiguration()
-    {
-        $source = Environment::getPublicPath()
-            . '/typo3conf/ext/user_pizpalue/Resources/Private/FolderStructureTemplateFiles/AdditionalConfiguration.php';
-        $destination = Environment::getPublicPath() . '/typo3conf/AdditionalConfiguration.php';
-        if (!file_exists($source)) {
-            return false;
-        }
-        if (!file_exists($destination)) {
-            return GeneralUtility::upload_copy_move($source, $destination);
-        }
-
-        return false;
-    }
-
-    /**
      * Handles copying the default file AdditionalConfiguration.php.
      *
      * @param $extensionKey
@@ -53,5 +33,25 @@ class ExtensionInstallUtility
         if ($extensionConfiguration->get('user_pizpalue', 'addAdditionalConfiguration')) {
             $this->copyAdditionalConfiguration();
         }
+    }
+
+    /**
+     * Copies the default AdditionalConfiguration file.
+     *
+     * @return bool returns true if the default file has been copied
+     */
+    private function copyAdditionalConfiguration()
+    {
+        $source = Environment::getPublicPath()
+            . '/typo3conf/ext/user_pizpalue/Resources/Private/FolderStructureTemplateFiles/AdditionalConfiguration.php';
+        $destination = Environment::getPublicPath() . '/typo3conf/AdditionalConfiguration.php';
+        if (!file_exists($source)) {
+            return false;
+        }
+        if (!file_exists($destination)) {
+            return GeneralUtility::upload_copy_move($source, $destination);
+        }
+
+        return false;
     }
 }
