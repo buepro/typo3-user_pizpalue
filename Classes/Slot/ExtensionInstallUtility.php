@@ -16,7 +16,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class ExtensionInstallUtility
 {
     /**
-     * Copies the default AdditionalConfiguration file
+     * Copies the default AdditionalConfiguration file.
      *
      * @return bool returns true if the default file has been copied
      */
@@ -31,17 +31,18 @@ class ExtensionInstallUtility
         if (!file_exists($destination)) {
             return GeneralUtility::upload_copy_move($source, $destination);
         }
+
         return false;
     }
 
     /**
-     * Handles copying the default file AdditionalConfiguration.php
+     * Handles copying the default file AdditionalConfiguration.php.
      *
      * @param $extensionKey
      * @throws \TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationExtensionNotConfiguredException
      * @throws \TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationPathDoesNotExistException
      */
-    public function afterExtensionInstall($extensionKey)
+    public function afterExtensionInstall($extensionKey): void
     {
         if ($extensionKey !== 'user_pizpalue') {
             return;
