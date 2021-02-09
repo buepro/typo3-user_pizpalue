@@ -34,7 +34,6 @@ lib.contentElement {
 #  }
 }
 
-#@import 'EXT:user_pizpalue/Configuration/TypoScript/Lib/TileTeaser.typoscript'
 
 #=========================================================#
 # Config
