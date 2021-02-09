@@ -219,7 +219,7 @@ plugin.bootstrap_package.settings.scss {
 #=========================================================#
 
 page.logo {
-  file = EXT:user_pizpalue/Resources/Public/Images/logo.svg
+#  file = EXT:user_pizpalue/Resources/Public/Images/logo.svg
 #  height = 140
 #  width = 390
 #  fileInverted = EXT:user_pizpalue/Resources/Public/Images/logo_inv.svg
