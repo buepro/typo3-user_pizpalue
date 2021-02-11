@@ -97,7 +97,7 @@ pizpalue.scaffold {
 
 
 #=========================================================#
-# Menu
+# Header
 #=========================================================#
 
 page {
@@ -106,15 +106,6 @@ page {
       style = default
       type =
     }
-
-    meta {
-      enable = 0
-      navigationType = list
-#      navigationValue = [put list of page uid's here]
-      includeNotInMenu = 1
-    }
-
-    language.enable = 1
   }
 }
 
@@ -128,6 +119,28 @@ page {
     }
   }
 [end]
+
+plugin.bootstrap_package.settings.scss {
+  pp-header-overlay-breakpoint = 0px
+}
+
+
+#=========================================================#
+# Menu
+#=========================================================#
+
+page {
+  theme {
+    meta {
+      enable = 0
+      navigationType = list
+#      navigationValue = [put list of page uid's here]
+      includeNotInMenu = 1
+    }
+
+    language.enable = 1
+  }
+}
 
 
 #=========================================================#
