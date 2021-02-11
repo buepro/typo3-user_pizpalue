@@ -6,6 +6,29 @@
     overflow-wrap: anywhere;
 }
 
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.25 * $font-size-base;
+    }
+}
+
+ul.list-normal {
+    padding-left: 1.5rem;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+//
+// Content elements
+//
+@include media-breakpoint-down(sm) {
+    .textmedia-gallery, .textpic-gallery {
+        margin-bottom: 1.7rem;
+    }
+}
+
 //
 // Footer
 //
