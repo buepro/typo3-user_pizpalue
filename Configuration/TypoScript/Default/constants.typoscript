@@ -121,6 +121,7 @@ page {
 [end]
 
 plugin.bootstrap_package.settings.scss {
+#  grid-float-breakpoint = 992
   pp-header-overlay-breakpoint = 0px
 #   pp-header-toggler-width = 34px
 #   pp-header-toggler-padding = 6px
@@ -144,6 +145,7 @@ page {
       includeNotInMenu = 1
     }
 
+#    breadcrumb.enable = 0
     language.enable = 1
   }
 }
@@ -225,11 +227,11 @@ plugin.bootstrap_package.settings.scss {
 #  border-radius = 4px
 #  border-radius-sm = 4px
 #  border-radius-lg = 4px
+
   #---------------------------------------------------------#
   # Navbar
   #---------------------------------------------------------#
 #  navbar-nav-link-padding-x = 1rem
-#  grid-float-breakpoint = 992
 }
 
 
