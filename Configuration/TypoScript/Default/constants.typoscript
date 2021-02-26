@@ -121,7 +121,8 @@ page {
 [end]
 
 plugin.bootstrap_package.settings.scss {
-#  grid-float-breakpoint = 992
+#  // defines from where on the mainmenu toggler isn't shown any more
+#  grid-float-breakpoint = 992px
   pp-header-overlay-breakpoint = 0px
 #   pp-header-toggler-width = 34px
 #   pp-header-toggler-padding = 6px
