@@ -23,6 +23,11 @@ ul.list-normal {
 //
 // Content elements
 //
+.pp-card-primary, .pp-card-secondary, .pp-card-complementary {
+    .card {
+        border: none;
+    }
+}
 @include media-breakpoint-down(sm) {
     .textmedia-gallery, .textpic-gallery {
         margin-bottom: 1.7rem;
