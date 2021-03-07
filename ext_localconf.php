@@ -56,15 +56,4 @@ defined('TYPO3_MODE') || die();
             '@import "EXT:user_pizpalue/Configuration/Form/Setup.typoscript"'
         );
     }
-
-    /**
-     * Signal afterExtensionInstall
-     */
-    $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
-    $signalSlotDispatcher->connect(
-        \TYPO3\CMS\Extensionmanager\Utility\InstallUtility::class,
-        'afterExtensionInstall',
-        \Buepro\UserPizpalue\Slot\ExtensionInstallUtility::class,
-        'afterExtensionInstall'
-    );
 })();
