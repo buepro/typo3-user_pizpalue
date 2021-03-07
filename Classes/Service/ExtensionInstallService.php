@@ -83,6 +83,7 @@ class ExtensionInstallService
         );
         $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
         $messageQueue = $flashMessageService->getMessageQueueByIdentifier('extbase.flashmessages.tx_extensionmanager_tools_extensionmanagerextensionmanager');
+        /** @extensionScannerIgnoreLine */
         $messageQueue->addMessage($message);
         // @todo Confirm copying went correctly
         return true;
