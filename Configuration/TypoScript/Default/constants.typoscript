@@ -230,8 +230,9 @@ plugin.bootstrap_package.settings.scss {
 #  border-radius-lg = 4px
 
   #---------------------------------------------------------#
-  # Navbar
+  # Nav and navbar
   #---------------------------------------------------------#
+#  nav-link-padding-x = 1rem
 #  navbar-nav-link-padding-x = 1rem
 }
 
