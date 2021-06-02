@@ -32,7 +32,7 @@ class ExtensionInstallService
      */
     public function afterExtensionInstall($extensionKey): void
     {
-        if ($extensionKey !== 'user_pizpalue') {
+        if ('user_pizpalue' !== (string) $extensionKey) {
             return;
         }
 
@@ -75,16 +75,18 @@ class ExtensionInstallService
         }
         GeneralUtility::upload_copy_move($source, $destination);
         // Notify
-        $message = GeneralUtility::makeInstance(FlashMessage::class,
-            $GLOBALS['LANG']->sL('LLL:EXT:user_pizpalue/Resources/Private/Language/Backend.xlf:ext_conf.additionalConfigurationChanged'),
-            '',
-            FlashMessage::NOTICE,
-            true
-        );
-        $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
-        $messageQueue = $flashMessageService->getMessageQueueByIdentifier('extbase.flashmessages.tx_extensionmanager_tools_extensionmanagerextensionmanager');
-        /** @extensionScannerIgnoreLine */
-        $messageQueue->addMessage($message);
+        if (!Environment::isCli()) {
+            $message = GeneralUtility::makeInstance(FlashMessage::class,
+                $GLOBALS['LANG']->sL('LLL:EXT:user_pizpalue/Resources/Private/Language/Backend.xlf:ext_conf.additionalConfigurationChanged'),
+                '',
+                FlashMessage::NOTICE,
+                true
+            );
+            $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
+            $messageQueue = $flashMessageService->getMessageQueueByIdentifier('extbase.flashmessages.tx_extensionmanager_tools_extensionmanagerextensionmanager');
+            /** @extensionScannerIgnoreLine */
+            $messageQueue->addMessage($message);
+        }
         // @todo Confirm copying went correctly
         return true;
     }
