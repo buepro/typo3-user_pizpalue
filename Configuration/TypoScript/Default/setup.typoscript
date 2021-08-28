@@ -54,7 +54,7 @@ page {
   #---------------------------------------------------------#
   # CSS/Scss
   #---------------------------------------------------------#
-  includeCSS.upGeneralScss = EXT:user_pizpalue/Resources/Public/Scss/custom.scss
+  includeCSS.upGeneralScss = EXT:user_pizpalue/Resources/Public/Scss/theme.scss
   #:::::::::::::::::::::::
   #: Add own icon font (containing pizpalue icons) and additional fonts
   #.
