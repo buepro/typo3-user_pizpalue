@@ -382,8 +382,6 @@ page {
 #  tracking.google.trackingID =
 }
 
-page.meta {
-#  description =
-#  keywords =
-#  author =
+pizpalue.seo {
+  optimizeLinkTargets = 1
 }
