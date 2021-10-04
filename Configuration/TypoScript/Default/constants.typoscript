@@ -124,12 +124,12 @@ plugin.bootstrap_package.settings.scss {
 #  // defines from where on the mainmenu toggler isn't shown any more
 #  grid-float-breakpoint = 992px
   pp-header-overlay-breakpoint = 0px
-#   pp-header-toggler-width = 34px
-#   pp-header-toggler-padding = 6px
-#   pp-header-toggler-line-gap = round($pp-header-toggler-width / 5.67)
-#   pp-header-toggler-line-width = $pp-header-toggler-width - 2 * $pp-header-toggler-padding
-#   pp-header-toggler-line-height = round($pp-header-toggler-line-width / 11)
-#   pp-header-toggler-margin-right = -$pp-header-toggler-padding
+#  pp-header-toggler-width = 34px
+#  pp-header-toggler-padding = 6px
+#  pp-header-toggler-line-gap = round($pp-header-toggler-width / 5.67)
+#  pp-header-toggler-line-width = $pp-header-toggler-width - 2 * $pp-header-toggler-padding
+#  pp-header-toggler-line-height = round($pp-header-toggler-line-width / 11)
+#  pp-header-toggler-margin-right = -$pp-header-toggler-padding
 }
 
 
@@ -295,7 +295,7 @@ pizpalue.appIcon {
 
 page.theme {
   socialmedia {
-    #    enable = 0
+#    enable = 0
     channels {
 #      facebook.url = https://www.facebook.com/typo3/
 #      twitter.url = https://twitter.com/typo3
@@ -369,7 +369,7 @@ pizpalue.storage {
 # Content
 #=========================================================#
 
-# Content sliding for default layout border section
+# Content sliding for border section, layout "default"
 #page.theme.pagelayout.default.colPos.3.slide = -1
 
 
