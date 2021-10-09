@@ -16,19 +16,33 @@ lib.contentElement {
   }
 
   #:::::::::::::::::::::::
-  #: Set maximum image resolution(s)
+  #: Adjust maximum image resolution(s)
   #.
 #  settings {
 #    responsiveimages {
 #      variants {
 #        default {
+#          breakpoint = 1600
+#          width = 1520
+#        }
+#        xlarge {
 #          breakpoint = 1200
-#          width = 1800
+#          width = 1140
 #        }
 #        large {}
 #        medium {}
 #        small {}
 #        extrasmall {}
+#      }
+#      pageVariants {
+#        default {
+#          breakpoint = 1600
+#          width = 2200
+#        }
+#        xlarge {
+#          breakpoint = 1200
+#          width = 1600
+#        }
 #      }
 #    }
 #  }
@@ -131,6 +145,6 @@ page.10.dataProcessing.20.levels = 3
 
 # Limit seo if not on customer domain (e.g. when using temporary domain for site creation)
 [site("base").getHost() != "{$pizpalue.customer.domain}" && site("base").getHost() != "www.{$pizpalue.customer.domain}"]
-page.meta.robots = noindex,nofollow
-@import 'EXT:pizpalue/Configuration/TypoScript/Develop/Indicator.typoscript'
+  page.meta.robots = noindex,nofollow
+  @import 'EXT:pizpalue/Configuration/TypoScript/Develop/Indicator.typoscript'
 [END]
