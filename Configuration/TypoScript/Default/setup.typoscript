@@ -17,50 +17,51 @@ lib.contentElement {
 
     #:::::::::::::::::::::::
     #: Adjust maximum image resolution(s)
+    #: Check as well TS constants for grid breakpoints (plugin.bootstrap_package.settings.scss.grid-breakpoints)
     #.
-    #    settings {
-    #        responsiveimages {
-    #            variants {
-    #                default {
-    #                    breakpoint = 1600
-    #                    width = 1520
-    #                }
-    #
-    #                xlarge {
-    #                    breakpoint = 1200
-    #                    width = 1140
-    #                }
-    #
-    #                large {
-    #
-    #                }
-    #
-    #                medium {
-    #
-    #                }
-    #
-    #                small {
-    #
-    #                }
-    #
-    #                extrasmall {
-    #
-    #                }
-    #            }
-    #
-    #            pageVariants {
-    #                default {
-    #                    breakpoint = 1600
-    #                    width = 2200
-    #                }
-    #
-    #                xlarge {
-    #                    breakpoint = 1200
-    #                    width = 1600
-    #                }
-    #            }
-    #        }
-    #    }
+#    settings {
+#        responsiveimages {
+#            variants {
+#                default {
+#                    breakpoint = 1600
+#                    width = 1520
+#                }
+#
+#                xlarge {
+#                    breakpoint = 1200
+#                    width = 1140
+#                }
+#
+#                large {
+#
+#                }
+#
+#                medium {
+#
+#                }
+#
+#                small {
+#
+#                }
+#
+#                extrasmall {
+#
+#                }
+#            }
+#
+#            pageVariants {
+#                default {
+#                    breakpoint = 1600
+#                    width = 2200
+#                }
+#
+#                xlarge {
+#                    breakpoint = 1200
+#                    width = 1600
+#                }
+#            }
+#        }
+#    }
 }
 
 
