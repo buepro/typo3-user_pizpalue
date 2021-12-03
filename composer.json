@@ -41,7 +41,11 @@
 		"phpstan/phpstan-phpunit": "^0.12.19",
 		"phpstan/phpstan-strict-rules": "^0.12.9",
 		"roave/security-advisories": "dev-latest",
-		"seld/jsonlint": "^1.8"
+		"seld/jsonlint": "^1.8",
+		"typo3/cms-base-distribution": "^10.4 || ^11.5",
+		"typo3/cms-impexp": "^10.4 || ^11.5",
+		"typo3/cms-lowlevel": "^10.4 || ^11.5",
+		"typo3/cms-recycler": "^10.4 || ^11.5"
 	},
 	"config": {
 		"bin-dir": ".build/bin",
@@ -123,7 +127,7 @@
 			"gzip -cdk Build/site/db.sql.gz | .build/bin/typo3cms database:import"
 		],
 		"typo3cms:install:setup": [
-			".build/bin/typo3cms install:setup --no-interaction --use-existing-database --database-host-name='db' --database-name='db' --database-user-name='db' --database-user-password='db' --admin-user-name='admin' --admin-password='admin123ADMIN:)' --site-name='pizpalue dev' --web-server-config='apache'"
+			".build/bin/typo3cms install:setup --no-interaction --use-existing-database --database-host-name='db' --database-name='db' --database-user-name='db' --database-user-password='db' --admin-user-name='admin' --admin-password='admin123ADMIN:)' --site-name='user-pizpalue dev' --web-server-config='apache'"
 		]
 	},
 	"support": {
