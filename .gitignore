@@ -1,9 +1,10 @@
-.idea
-*.zip
+# Folders
+.build/
+.idea/
+Documentation-GENERATED-temp/
+
+# Files
+composer.lock
 *.cache
+*.zip
 Build/node_modules
-Build/package-lock.json
-.ddev
-!.ddev/config.yaml
-vendor
-composer-dev.lock
