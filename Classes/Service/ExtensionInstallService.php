@@ -76,7 +76,8 @@ class ExtensionInstallService
         GeneralUtility::upload_copy_move($source, $destination);
         // Notify
         if (!Environment::isCli()) {
-            $message = GeneralUtility::makeInstance(FlashMessage::class,
+            $message = GeneralUtility::makeInstance(
+                FlashMessage::class,
                 $GLOBALS['LANG']->sL('LLL:EXT:user_pizpalue/Resources/Private/Language/Backend.xlf:ext_conf.additionalConfigurationChanged'),
                 '',
                 FlashMessage::NOTICE,
