@@ -3,9 +3,11 @@
 #=========================================================#
 
 plugin.bootstrap_package.settings.scss {
-     # Enable presetting scss variables. Is as well used to generate the main theme from pizpalue.
-     # See `EXT:pizpalue/Resources/Public/Scss/theme-main.scss`
+    # Enable presetting scss variables. Is as well used to generate the main theme from pizpalue.
+    # See `EXT:pizpalue/Resources/Public/Scss/theme-main.scss`
 #    pp-enable-user-presets = false
+    # Set to `composer-root` if user_pizpalue is used as a root package (e.g. for development)
+#    up-install-dir = composer-root
 }
 
 
@@ -108,7 +110,7 @@ plugin.bootstrap_package.settings.scss {
 }
 
 pizpalue.scaffold {
-#    showFooter = 1
+    #    showFooter = 1
     footer {
         rowClass = row
         leftColumnClass = col-sm-6 col-lg-4 order-1 ppc-left
