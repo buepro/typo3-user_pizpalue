@@ -6,7 +6,7 @@
 ---
 
 This extension serves as a base to customize a TYPO3-website using the template
-[pizpalue](https://github.com/buepro/typo3-pizpalue).
+[pizpalue](https://github.com/buepro/typo3-pizpalue) in version 12.0.0 and higher.
 
 ## Composer
 
