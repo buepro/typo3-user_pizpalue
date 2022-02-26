@@ -51,6 +51,9 @@
 		"vendor-dir": ".build/vendor"
 	},
 	"extra": {
+		"branch-alias": {
+			"dev-master": "2.0.x-dev"
+		},
 		"typo3/cms": {
 			"app-dir": ".build",
 			"extension-key": "user_pizpalue",
