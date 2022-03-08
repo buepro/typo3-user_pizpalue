@@ -28,13 +28,13 @@ module.exports = function (grunt) {
         }
       },
       general: {
-        src: '<%= paths.js %>Src/jquery.general.js',
-        dest: '<%= paths.js %>Dist/jquery.general.min.js'
+        src: '<%= paths.js %>Src/general.js',
+        dest: '<%= paths.js %>Dist/general.min.js'
       },
     },
     watch: {
       general: {
-        files: '<%= paths.js %>Src/jquery.general.js',
+        files: '<%= paths.js %>Src/general.js',
         tasks: 'uglify:general'
       },
     },
