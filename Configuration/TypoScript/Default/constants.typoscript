@@ -153,7 +153,6 @@ plugin.bootstrap_package.settings.scss {
 #    pp-header-toggler-line-gap = round($pp-header-toggler-width / 5.67)
 #    pp-header-toggler-line-width = $pp-header-toggler-width - 2 * $pp-header-toggler-padding
 #    pp-header-toggler-line-height = round($pp-header-toggler-line-width / 11)
-#    pp-header-toggler-margin-right = -$pp-header-toggler-padding
 }
 
 
