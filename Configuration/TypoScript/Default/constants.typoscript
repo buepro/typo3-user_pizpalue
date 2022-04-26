@@ -24,6 +24,8 @@ pizpalue.general {
 pizpalue.agency {
     name = Agentur
 #    slogan = Slogan
+#    phone = 111 111 11 11
+#    email = info@terve.link
 #    link = https://www.terve.link
 #    reference = <span class="pp-agency-reference">Eine Webseite von <a href="{$pizpalue.agency.link}" title="{$pizpalue.agency.name} | {$pizpalue.agency.slogan}" target="_blank">{$pizpalue.agency.name}</a></span>
 #    siteMode = 0
