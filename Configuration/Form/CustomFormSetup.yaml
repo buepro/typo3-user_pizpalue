@@ -2,5 +2,8 @@ TYPO3:
   CMS:
     Form:
       persistenceManager:
+        allowedExtensionPaths:
+          110:
         allowedFileMounts:
           300: 1:/user_pizpalue/customforms/
+          400: 1:/customer/810_Formulare
