@@ -13,3 +13,8 @@
 #=========================================================#
 
 @import 'EXT:user_pizpalue/Configuration/TypoScript/Default/constants.typoscript'
+
+[tree.level == 0]
+    pizpalue.features.imageLoading = eager
+[end]
+pizpalue.customer.domain = demo.buechler.pro
