@@ -2,7 +2,7 @@ $up-install-dir: '' !default;
 
 //
 // Import all functions (defined by bootstrap, bootstrap_package and pizpalue)
-//
+// --------------------------------------------------
 @if ($up-install-dir != 'composer-root') {
     @import "../../../../pizpalue/Resources/Public/Scss/functions";
 } @else {
@@ -12,7 +12,7 @@ $up-install-dir: '' !default;
 
 //
 // Import variables
-//
+// --------------------------------------------------
 @if ($up-install-dir != 'composer-root') {
     @import "../../../../pizpalue/Resources/Public/Scss/variables";
 } @else {
@@ -22,17 +22,17 @@ $up-install-dir: '' !default;
 
 //
 // Import mixins
-//
+// --------------------------------------------------
 @if ($up-install-dir != 'composer-root') {
     @import "../../../../pizpalue/Resources/Public/Scss/mixins";
 } @else {
     @import "../../../.build/public/typo3conf/ext/pizpalue/Resources/Public/Scss/mixins";
 }
-//@import "mixins";
+@import "mixins";
 
 //
 // Create utility classes
-//
+// --------------------------------------------------
 //@import "utilities";
 //@if ($up-install-dir != 'composer-root') {
 //   @import "../../../../pizpalue/Resources/Public/Scss/utilities-api";
@@ -42,5 +42,5 @@ $up-install-dir: '' !default;
 
 //
 // Import customized items
-//
+// --------------------------------------------------
 @import "components";
