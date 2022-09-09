@@ -31,6 +31,11 @@ pizpalue.scaffold {
     }
 }
 
+plugin.bootstrap_package.settings.scss {
+    frame-inner-spacing = 2.5rem
+    frame-inner-spacing-small = 1.25rem
+}
+
 
 #=========================================================#
 # Header
