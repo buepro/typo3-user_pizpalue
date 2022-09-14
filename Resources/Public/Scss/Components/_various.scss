@@ -85,3 +85,26 @@ $up-max-image-width: 2000px !default;
         transform: translateY(0.16em);
     }
 }
+
+//
+// Language menu
+// --------------------------------------------------
+#language_menu {
+    &.ppc-icon, &.ppc-icontext {
+        line-height: 1.5em;
+    }
+    &.ppc-icon li {
+        padding-left: 0.15em !important;
+        padding-right: 0.15em !important;
+    }
+    &.ppc-icontext img {
+        margin-right: 0.3em;
+    }
+    img {
+        width: auto;
+        height: 1.5em;
+    }
+    .text-muted img {
+        filter: grayscale(1);
+    }
+}
