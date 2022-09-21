@@ -40,6 +40,8 @@ pizpalue.agency {
 pizpalue.customer {
     company = Company GmbH
     domain = domain.ch
+    legalContact = Legal contact
+    uid = CHE-xxx.xxx.xxx
     contactName = Allgemeiner Kundenname
     contactPhone = 111 111 11 11
     contactPhoneAlt = 111 111 11 12
