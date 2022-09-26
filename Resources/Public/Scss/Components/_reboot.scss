@@ -14,8 +14,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow-wrap: anywhere;
 }
 @include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.125 * $font-size-base;
+    :root {
+        --bs-body-font-size: #{1.125 * $font-size-base};
     }
 }
 ul.list-normal {
