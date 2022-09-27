@@ -23,3 +23,12 @@
 .pp-tabs-complementary, .fe-tabs-complementary, .ce-tabs-complementary {
     @include up-style-tab-light($complementary);
 }
+
+//
+// Grid
+//
+.frame-type-ce_grid, .pp-frameless-content.pp-type-ce_grid {
+    .row {
+        --bs-gutter-y: var(--bs-gutter-x);
+    }
+}
