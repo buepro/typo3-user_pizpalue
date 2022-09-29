@@ -255,6 +255,7 @@ plugin.bootstrap_package.settings.scss {
 #    footer-meta-link-hover-decoration = none
 #    headings-color = null
 #    input-placeholder-color = $gray-600
+#    pp-frame-background-secondary = ('background': #dddddd, 'color': #111111, 'headings-color': #222222, 'link-color': #333333, 'link-hover-color': #444444, 'link-decoration': 'none', 'link-decoration-style': 'inherit', 'link-weight': null)
 }
 
 
