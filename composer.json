@@ -21,7 +21,7 @@
 		}
 	],
 	"require": {
-		"buepro/typo3-pizpalue": "^14.0.0 || dev-main",
+		"buepro/typo3-pizpalue": ">=14.0.0 || dev-main",
 		"typo3/cms-core": ">=10.4.11"
 	},
 	"require-dev": {
