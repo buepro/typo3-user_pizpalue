@@ -28,11 +28,6 @@ $up-max-image-width: 2000px !default;
         @include pp-make-text-shadow-outline();
     }
 }
-@include media-breakpoint-down(md) {
-    .textmedia-gallery, .textpic-gallery {
-        margin-bottom: 1.7rem;
-    }
-}
 
 //
 // Forms
