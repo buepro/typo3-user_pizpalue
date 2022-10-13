@@ -29,6 +29,8 @@ lib.contentElement {
 
 config {
     cache_clearAtMidnight = 1
+    spamProtectEmailAddresses = -1
+    spamProtectEmailAddresses_atSubst = (at)
 }
 
 
