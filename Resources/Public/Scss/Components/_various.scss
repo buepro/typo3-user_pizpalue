@@ -16,20 +16,6 @@ $up-max-image-width: 2000px !default;
 }
 
 //
-// Content elements
-// --------------------------------------------------
-.pp-card-primary, .pp-card-secondary, .pp-card-complementary {
-    .card {
-        border: none;
-    }
-}
-.carousel-item-type-header, .carousel-item-type-text_and_image {
-    .carousel-header, .carousel-subheader, .carousel-text {
-        @include pp-make-text-shadow-outline();
-    }
-}
-
-//
 // Forms
 // --------------------------------------------------
 .frame-type-form_formframework {

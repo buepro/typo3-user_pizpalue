@@ -1,0 +1,25 @@
+//
+// Card
+// --------------------------------------------------
+.pp-card-primary, .pp-card-secondary, .pp-card-complementary {
+    .card {
+        border: none;
+    }
+}
+
+//
+// Carousel
+// --------------------------------------------------
+.carousel-item-type-header, .carousel-item-type-text_and_image {
+    .carousel-header, .carousel-subheader, .carousel-text {
+        @include pp-make-text-shadow-outline();
+    }
+}
+
+//
+// Thumbnail-menu
+// --------------------------------------------------
+.thumbnail-menu {
+    --pp-frame-headings-color: var(--thumbnailmenu-color);
+    --frame-link-hover-color: var(--thumbnailmenu-color);
+}
