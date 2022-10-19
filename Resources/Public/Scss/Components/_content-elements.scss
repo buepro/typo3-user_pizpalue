@@ -6,6 +6,11 @@
         border: none;
     }
 }
+.card {
+    &.pp-panel {
+        border: none;
+    }
+}
 
 //
 // Carousel
