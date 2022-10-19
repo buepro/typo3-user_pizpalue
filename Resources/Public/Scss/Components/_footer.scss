@@ -42,7 +42,7 @@
         gap: 0.5rem;
     }
     .sociallinks-link {
-        width: var(--pp-sociallinks-outersize, calc(1.5 * var(--up-sociallinks-size)));
-        height: var(--pp-sociallinks-outersize, calc(1.5 * var(--up-sociallinks-size)));
+        width: calc(1.5 * var(--up-sociallinks-size));
+        height: calc(1.5 * var(--up-sociallinks-size));
     }
 }
