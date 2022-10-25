@@ -16,6 +16,7 @@
 // Carousel
 // --------------------------------------------------
 .carousel-item-type-header, .carousel-item-type-text_and_image {
+    --carousel-item-color: white;
     .carousel-header, .carousel-subheader, .carousel-text {
         @include pp-make-text-shadow-outline();
     }
