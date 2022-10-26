@@ -92,6 +92,7 @@ plugin.bootstrap_package.settings.scss {
 #=========================================================#
 
 plugin.bootstrap_package.settings.scss {
+    headings-margin-bottom = 1rem
     lead-font-size = 1.4rem
 }
 
