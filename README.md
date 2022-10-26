@@ -12,43 +12,72 @@
 This extension serves as a site package to customize a TYPO3-website using the template
 [pizpalue](https://github.com/buepro/typo3-pizpalue) in version 14.0.0 and higher.
 
-## Composer
+## Installation
 
-To use the extension in a composer environment different approaches are available. Following two ways are further
-outlined:
-
-### Without version control
-
-1. Don't add `buepro/typor-user-pizpalue` as a requirement to the composer configuration
-1. Copy the extension manually to the extension directory (`typo3conf/ext/user_pizpalue`)
-1. Add the following autoload declaration to the composer configuration from the web site:
+1. **Get source code**
    ```
-   "autoload": {
-        "psr-4": {
-            "Buepro\\UserPizpalue\\": "public/typo3conf/ext/user_pizpalue/Classes/"
-        }
-    }
+   composer create-project buepro/typo3-user-pizpalue && cd typo3-user-pizpalue && composer u --no-dev
    ```
-1. Run `composer dumpautoload` to generate the autoload info
 
-### With version control
-
-1. Add your repository to the composer configuration from the web site:
+2. **Setup TYPO3**
    ```
-   "repositories": [
-       {
-            "type": "vcs",
-            "url": "https://user@domain.ch/path_to_git/typo3-user-pizpalue.git"
+   php .build/bin/typo3cms install:setup \
+   --no-interaction \
+   --use-existing-database \
+   --database-host-name="127.0.0.1" \
+   --database-port="3306" \
+   --database-name="db" \
+   --database-user-name="db" \
+   --database-user-password="db" \
+   --admin-user-name="admin" \
+   --admin-password="password" \
+   --site-name="Pizpalue site" \
+   --web-server-config="apache" \
+   --skip-extension-setup
+   ```
+   > Extension setup is skipped due to a bug in the package `helhum/typo3-console`.
+
+3. **Setup extensions**
+   ```
+   .build/bin/typo3 extension:setup
+   ```
+
+4. **Review `composer.json`**
+
+    1. Define packages
+
+       Remove the dependency to `"buepro/typo3-pizpalue-distribution"` and all packages not required by the
+       site.
+       > NOTE: Just use the needed packages. In many projects just `buepro/typo3-pizpalue` and
+       `buepro/typo3-container-elements` are required.
+
+    2. Add repository for site package
+       ```
+       "repositories": [
+          {
+             "type": "vcs",
+             "url": "../../git/typo3-user_pizpalue.git"
+          }
+       ],
+       ```
+
+    3. **Check PHP configuration**
+
+       Make sure the PHP version used in the shell and for cron jobs corresponds to the PHP version used for running the
+       website. In case they  differ you might need to add a platform configuration to `composer.json`. A possible
+       platform configuration could look as following:
+       ```
+       "config": {
+         "platform": {
+           "php": "8.1.9"
+         }
        }
-   ],
+       ```
+
+5. **Finalize installation**
    ```
-1. Update the require section from the composer configuration from the web site:
+   composer finalize-installation
    ```
-   "require": {
-       "buepro/typo3-user-pizpalue": "dev-mybranch",
-   }
-   ```
-1. Run `composer update`
 
 ## Usage
 
@@ -130,9 +159,7 @@ user_pizpalue {
 
 ## Coding guidelines
 
-- Use
-  the [coding guidelines defined by TYPO3](https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html)
-  .
+- Use the [coding guidelines defined by TYPO3](https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html).
 - Use **up, Up, up-, upc-** as package related prefixes where `upc-` is mainly used for complementary css classes used
   together with other selectors (e.g. `.up-example .upc-red { ... }`)
 
@@ -143,7 +170,6 @@ user_pizpalue {
 - [TypoScript reference](https://docs.typo3.org/typo3cms/TyposcriptReference/)
 - [Fluid guide](https://docs.typo3.org/typo3cms/ExtbaseGuide/Fluid/)
 - [Fluid view helper reference](https://docs.typo3.org/typo3cms/ViewHelperReference/)
-- [VHS view helper reference](https://viewhelpers.fluidtypo3.org/fluidtypo3/vhs/)
 - [TCA reference](https://docs.typo3.org/typo3cms/TCAReference/)
 - [TSconfig reference](https://docs.typo3.org/typo3cms/TSconfigReference/)
 - [Core API reference](https://docs.typo3.org/typo3cms/CoreApiReference/)
