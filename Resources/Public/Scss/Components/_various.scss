@@ -49,9 +49,6 @@ $up-max-image-width: 2000px !default;
 // Social links
 // NOTE: The bootstrap package uses the class footer-sociallinks for further styling
 // --------------------------------------------------
-:root {
-    --up-sociallinks-size: 1.25rem;
-}
 .sociallinks-link-icon {
     font-size: var(--up-sociallinks-size);
     width: var(--up-sociallinks-size);
