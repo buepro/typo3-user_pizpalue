@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8abe1a4720aef052092c7d3062c41a0",
+    "content-hash": "ef2146792601e7a69a408993f2b0db36",
     "packages": [
         {
             "name": "b13/container",
@@ -9229,64 +9229,6 @@
                 }
             ],
             "time": "2022-02-13T16:23:17+00:00"
-        },
-        {
-            "name": "j13k/yaml-lint",
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/j13k/yaml-lint.git",
-                "reference": "e3b6e970e1a341a2e09fc3b47188ce7f648ef8e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/j13k/yaml-lint/zipball/e3b6e970e1a341a2e09fc3b47188ce7f648ef8e8",
-                "reference": "e3b6e970e1a341a2e09fc3b47188ce7f648ef8e8",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/yaml": "^2|^3|^4|^5"
-            },
-            "bin": [
-                "bin/yaml-lint"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "J13k\\YamlLint\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John Fitzpatrick",
-                    "homepage": "http://github.com/j13k"
-                }
-            ],
-            "description": "A compact command line utility for checking YAML file syntax",
-            "homepage": "https://github.com/j13k/yaml-lint",
-            "keywords": [
-                "cli",
-                "lint",
-                "symfony",
-                "syntax",
-                "utility",
-                "yaml",
-                "yml"
-            ],
-            "support": {
-                "issues": "https://github.com/j13k/yaml-lint/issues",
-                "source": "https://github.com/j13k/yaml-lint/tree/1.1.4"
-            },
-            "time": "2021-03-11T08:48:25+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
