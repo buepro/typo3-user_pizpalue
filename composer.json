@@ -116,7 +116,7 @@
 			"ddev restart",
 			"ddev composer site:install",
 			"ddev launch typo3",
-			"echo '\\033[0;32mINFO: Login to BE using admin/admin\\033[0m'"
+			"echo 'INFO: Login to BE using admin/admin'"
 		],
 		"ddev:uninstall": [
 			"ddev composer typo3cms:database:export",
