@@ -86,3 +86,10 @@ $up-max-image-width: 2000px !default;
         filter: grayscale(1);
     }
 }
+
+//
+// Cookie dialog
+//
+#cookieconsent .cc-revoke {
+    padding: 0 0.5rem;
+}
