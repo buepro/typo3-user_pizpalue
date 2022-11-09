@@ -8,12 +8,17 @@
 # Templates
 #=========================================================#
 
-user_pizpalue {
-    page.fluidtemplate {
+page {
+    fluidtemplate {
         templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/Page/
     }
-    contentElement.fluidtemplate {
-        templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
+}
+
+plugin {
+    bootstrap_package_contentelements {
+        view {
+            templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
+        }
     }
 }
 

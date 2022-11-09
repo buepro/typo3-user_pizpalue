@@ -3,17 +3,6 @@
 #=========================================================#
 
 lib.contentElement {
-    layoutRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.layoutRootPath}
-    }
-
-    templateRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.templateRootPath}
-    }
-
-    partialRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.partialRootPath}
-    }
 
     #:::::::::::::::::::::::
     #: Adjust maximum image resolution(s)

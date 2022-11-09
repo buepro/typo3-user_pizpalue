@@ -5,25 +5,6 @@
 
 
 #=========================================================#
-# Lib objects
-#=========================================================#
-
-lib.contentElement {
-    layoutRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.layoutRootPath}
-    }
-
-    templateRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.templateRootPath}
-    }
-
-    partialRootPaths {
-        30 = {$user_pizpalue.contentElement.fluidtemplate.partialRootPath}
-    }
-}
-
-
-#=========================================================#
 # Config
 #=========================================================#
 
@@ -43,15 +24,6 @@ page {
     # CSS/Scss
     #---------------------------------------------------------#
     includeCSS.upGeneralScss = EXT:user_pizpalue/Resources/Public/Scss/theme.scss
-
-    #---------------------------------------------------------#
-    # Template
-    #---------------------------------------------------------#
-    10 {
-        layoutRootPaths.3 = {$user_pizpalue.page.fluidtemplate.layoutRootPath}
-        templateRootPaths.3 = {$user_pizpalue.page.fluidtemplate.templateRootPath}
-        partialRootPaths.3 = {$user_pizpalue.page.fluidtemplate.partialRootPath}
-    }
 }
 
 

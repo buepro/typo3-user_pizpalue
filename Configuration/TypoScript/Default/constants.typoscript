@@ -64,20 +64,23 @@ pizpalue.customer {
 # Templates
 #=========================================================#
 
-user_pizpalue {
-    page.fluidtemplate {
-#        layoutRootPath = EXT:user_pizpalue/Resources/Private/Layouts/Page/
-#        partialRootPath = EXT:user_pizpalue/Resources/Private/Partials/Page/
+page {
+    fluidtemplate {
+        layoutRootPath = EXT:user_pizpalue/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:user_pizpalue/Resources/Private/Partials/Page/
         templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/Page/
-    }
-
-    contentElement.fluidtemplate {
-#        layoutRootPath = EXT:user_pizpalue/Resources/Private/Layouts/ContentElements/
-#        partialRootPath = EXT:user_pizpalue/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
     }
 }
 
+plugin {
+    bootstrap_package_contentelements {
+        view {
+            layoutRootPath = EXT:user_pizpalue/Resources/Private/Layouts/ContentElements/
+            partialRootPath = EXT:user_pizpalue/Resources/Private/Partials/ContentElements/
+            templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/ContentElements/
+        }
+    }
+}
 
 #=========================================================#
 # Features
