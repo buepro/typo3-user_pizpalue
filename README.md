@@ -16,7 +16,7 @@ This extension serves as a site package to customize a TYPO3-website using the t
 
 1. **Get source code**
    ```
-   composer create-project buepro/typo3-user-pizpalue && cd typo3-user-pizpalue && composer u --no-dev
+   composer create-project buepro/typo3-user-pizpalue && cd typo3-user-pizpalue && composer u
    ```
 
 2. **Setup TYPO3**
