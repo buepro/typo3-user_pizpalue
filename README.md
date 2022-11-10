@@ -2,7 +2,7 @@
 
 [![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
 [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
-[![Extension pizpalue](https://img.shields.io/badge/Pizpalue-12-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
+[![Extension pizpalue](https://img.shields.io/badge/Pizpalue-14-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
 [![Extension pizpalue_distribution](https://img.shields.io/badge/Pizpalue--Distribution-3-orange.svg)](https://extensions.typo3.org/extension/pizpalue_distribution/)
 [![Total Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/total.svg)](https://packagist.org/packages/buepro/typo3-user-pizpalue)
 [![Monthly Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/monthly)](https://packagist.org/packages/buepro/typo3-user-pizpalue)
@@ -21,18 +21,18 @@ This extension serves as a site package to customize a TYPO3-website using the t
 
 2. **Setup TYPO3**
    ```
-   php .build/bin/typo3cms install:setup \
+   .build/bin/typo3cms install:setup \
    --no-interaction \
    --use-existing-database \
-   --database-host-name="127.0.0.1" \
-   --database-port="3306" \
-   --database-name="db" \
-   --database-user-name="db" \
-   --database-user-password="db" \
-   --admin-user-name="admin" \
-   --admin-password="password" \
+   --database-host-name=127.0.0.1 \
+   --database-port=3306 \
+   --database-name=db \
+   --database-user-name=db \
+   --database-user-password=db \
+   --admin-user-name=admin \
+   --admin-password=password \
    --site-name="Pizpalue site" \
-   --web-server-config="apache" \
+   --web-server-config=apache \
    --skip-extension-setup
    ```
    > Extension setup is skipped due to a bug in the package `helhum/typo3-console`.
