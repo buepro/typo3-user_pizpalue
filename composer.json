@@ -1,7 +1,8 @@
 {
 	"name": "buepro/typo3-user-pizpalue",
-	"type": "typo3-cms-extension",
 	"description": "TYPO3 site package for pizpalue.",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
 	"keywords": [
 		"TYPO3 CMS",
 		"bootstrap",
@@ -11,7 +12,6 @@
 		"theme",
 		"web"
 	],
-	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Roman Büchler",
@@ -20,11 +20,16 @@
 			"role": "Developer"
 		}
 	],
+	"support": {
+		"issues": "https://github.com/buepro/typo3-user_pizpalue/issues",
+		"source": "https://github.com/buepro/typo3-user_pizpalue"
+	},
 	"require": {
 		"buepro/typo3-pizpalue": "^14.0.1",
 		"typo3/cms-core": "^11.5"
 	},
 	"require-dev": {
+		"php": ">=7.4.0",
 		"buepro/typo3-container-elements": "^4.0.0",
 		"buepro/typo3-easyconf": "^1.3.3",
 		"buepro/typo3-pizpalue-distribution": "dev-main",
@@ -32,26 +37,32 @@
 		"friendsoftypo3/tt-address": "^6.0.1",
 		"georgringer/eventnews": "5.0.0",
 		"georgringer/news": "^9.4.0",
-		"php": ">=7.4.0",
 		"typo3/cms-base-distribution": "^11.5",
 		"typo3/cms-indexed-search": "^11.5",
 		"typo3/cms-lowlevel": "^11.5",
 		"typo3/cms-recycler": "^11.5",
 		"typo3/cms-redirects": "^11.5"
 	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Buepro\\UserPizpalue\\": "Classes"
+		}
+	},
 	"config": {
-		"bin-dir": ".build/bin",
-		"optimize-autoloader": true,
-		"sort-packages": true,
-		"vendor-dir": ".build/vendor",
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true,
 			"ergebnis/composer-normalize": true
 		},
+		"bin-dir": ".build/bin",
+		"optimize-autoloader": true,
 		"platform": {
 			"php": "8.1.9"
-		}
+		},
+		"sort-packages": true,
+		"vendor-dir": ".build/vendor"
 	},
 	"extra": {
 		"branch-alias": {
@@ -63,13 +74,6 @@
 			"web-dir": ".build/public"
 		}
 	},
-	"autoload": {
-		"psr-4": {
-			"Buepro\\UserPizpalue\\": "Classes"
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"scripts": {
 		"post-autoload-dump": [
 			"mkdir -p .build/public/typo3conf/ext/",
@@ -79,9 +83,5 @@
 			"composer u",
 			".build/bin/typo3cms database:updateschema"
 		]
-	},
-	"support": {
-		"issues": "https://github.com/buepro/typo3-user_pizpalue/issues",
-		"source": "https://github.com/buepro/typo3-user_pizpalue"
 	}
 }
