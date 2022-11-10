@@ -8,8 +8,8 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Pizpalue custom template',
-    'description' => 'Custom template being used with template pizpalue.',
+    'title' => 'Pizpalue site package',
+    'description' => 'Site package being used with template pizpalue.',
     'category' => 'templates',
     'author' => 'Roman Büchler',
     'author_email' => 'rb@buechler.pro',

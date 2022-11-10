@@ -1,5 +1,5 @@
 # Folders
-.build/
+.build/*
 .idea/
 Documentation-GENERATED-temp/
 
@@ -7,3 +7,21 @@ Documentation-GENERATED-temp/
 *.cache
 *.zip
 Build/node_modules
+
+# Include site configuration
+!.build/config/
+.build/config/*
+!.build/config/sites/
+.build/config/sites/development/
+
+# Include easyconf configurations
+!.build/public/
+.build/public/*
+!.build/public/fileadmin/
+.build/public/fileadmin/*
+!.build/public/fileadmin/easyconf/
+!.build/public/fileadmin/pizpalue/
+.build/public/fileadmin/pizpalue/*
+!.build/public/fileadmin/pizpalue/extensions/
+.build/public/fileadmin/pizpalue/extensions/*
+!.build/public/fileadmin/pizpalue/extensions/easyconf/

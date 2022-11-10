@@ -1,7 +1,7 @@
 name: user-pizpalue
 type: typo3
 docroot: .build/public
-php_version: "7.4"
+php_version: "8.1"
 webserver_type: apache-fpm
 router_http_port: "80"
 router_https_port: "443"
@@ -12,7 +12,8 @@ mariadb_version: "10.3"
 mysql_version: ""
 use_dns_when_possible: true
 composer_version: ""
-web_environment: []
+web_environment:
+  - COMPOSER=composer-dev.json
 
 
 # This config.yaml was created with ddev version v1.17.7

@@ -2,6 +2,10 @@
 /Build export-ignore
 /Tests export-ignore
 
+# Files
+/composer-dev.* export-ignore
+/composer.lock export-ignore
+
 # Hidden elements
 /.* export-ignore
 
