@@ -14,6 +14,8 @@ This extension serves as a site package to customize a TYPO3-website using the t
 
 ## Installation
 
+The following steps set up a TYPO3 website using this package as a composer root package.
+
 1. **Get source code**
    ```
    composer create-project buepro/typo3-user-pizpalue && cd typo3-user-pizpalue && composer u
@@ -51,17 +53,7 @@ This extension serves as a site package to customize a TYPO3-website using the t
        > NOTE: Just use the needed packages. In many projects just `buepro/typo3-pizpalue` and
        `buepro/typo3-container-elements` are required.
 
-    2. Add repository for site package
-       ```
-       "repositories": [
-          {
-             "type": "vcs",
-             "url": "../../git/typo3-user_pizpalue.git"
-          }
-       ],
-       ```
-
-    3. **Check PHP configuration**
+   2. **Check PHP configuration**
 
        Make sure the PHP version used in the shell and for cron jobs corresponds to the PHP version used for running the
        website. In case they  differ you might need to add a platform configuration to `composer.json`. A possible
@@ -81,7 +73,7 @@ This extension serves as a site package to customize a TYPO3-website using the t
 
 ## Usage
 
-When starting a new project create a new git-branch and just commit to that branch. The master branch should always be
+When starting a new project create a new git-branch and just commit to that branch. The main branch should always be
 used to start new projects.
 
 To increase quality work progress might be committed and documented. Documentation has its home in the folder
@@ -97,11 +89,10 @@ To increase quality work progress might be committed and documented. Documentati
 
 Customizations typically start by adapting the [ts constants](Configuration/TypoScript/constants.typoscript) and
 [ts setup](Configuration/TypoScript/setup.typoscript). Frequently used configurations are collected in the
-folder [`Configuration/TypoScript/Default`](Configuration/TypoScript/Default). You might use them to get started by
+folder [`Configuration/TypoScript/Sample`](Configuration/TypoScript/Sample). You might use them to get started by
 copying the needed fragments to
 [`Configuration/TypoScript/constants.typoscript`](Configuration/TypoScript/constants.typoscript) or
-[`Configuration/TypoScript/setup.typoscript`](Configuration/TypoScript/setup.typoscript). The inclusion from the default
-TS (see `@import...`) might be deleted.
+[`Configuration/TypoScript/setup.typoscript`](Configuration/TypoScript/setup.typoscript).
 
 ### CSS/SCSS
 
@@ -143,8 +134,8 @@ steps:
 2. Enable the template in the TS constant declaration
 
 ```
-user_pizpalue {
-    page.fluidtemplate {
+page {
+    fluidtemplate {
         templateRootPath = EXT:user_pizpalue/Resources/Private/Templates/Page/
     }
 }
