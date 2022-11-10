@@ -12,6 +12,7 @@ Build/node_modules
 !.build/config/
 .build/config/*
 !.build/config/sites/
+.build/config/sites/development/
 
 # Include easyconf configurations
 !.build/public/

@@ -87,7 +87,9 @@
 	"scripts": {
 		"post-autoload-dump": [
 			"mkdir -p .build/public/typo3conf/ext/",
-			"[ -L .build/public/typo3conf/ext/user_pizpalue ] || ln -snvf ../../../../. .build/public/typo3conf/ext/user_pizpalue"
+			"[ -L .build/public/typo3conf/ext/user_pizpalue ] || ln -snvf ../../../../. .build/public/typo3conf/ext/user_pizpalue",
+			"mkdir -p .build/config/sites/development",
+			"[ -L .build/config/sites/development/config.yaml ] || ln -svf ../../../../Build/site/config.yaml .build/config/sites/development/config.yaml"
 		],
 		"ci": [
 			"@ci:static"
@@ -125,7 +127,7 @@
 			"git checkout '.build/'"
 		],
 		"finalize-installation": [
-			"composer u --no-dev",
+			"composer u",
 			".build/bin/typo3cms database:updateschema"
 		],
 		"fix": [
