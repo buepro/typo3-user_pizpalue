@@ -25,14 +25,14 @@
 		"source": "https://github.com/buepro/typo3-user_pizpalue"
 	},
 	"require": {
-		"buepro/typo3-pizpalue": "^14.0.1",
+		"buepro/typo3-pizpalue": "^14.1.0",
 		"typo3/cms-core": "^11.5"
 	},
 	"require-dev": {
 		"php": ">=7.4.0",
 		"buepro/typo3-container-elements": "^4.0.0",
 		"buepro/typo3-easyconf": "^1.3.3",
-		"buepro/typo3-pizpalue-distribution": "dev-main",
+		"buepro/typo3-pizpalue-distribution": "^5.1.0",
 		"buepro/typo3-timelog": "^1.7.0",
 		"friendsoftypo3/tt-address": "^6.0.1",
 		"georgringer/eventnews": "5.0.0",
