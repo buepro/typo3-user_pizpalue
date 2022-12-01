@@ -43,7 +43,7 @@
 		"typo3/cms-recycler": "^11.5",
 		"typo3/cms-redirects": "^11.5"
 	},
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"prefer-stable": true,
 	"autoload": {
 		"psr-4": {
