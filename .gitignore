@@ -25,3 +25,8 @@ Build/node_modules
 !.build/public/fileadmin/pizpalue/extensions/
 .build/public/fileadmin/pizpalue/extensions/*
 !.build/public/fileadmin/pizpalue/extensions/easyconf/
+
+# Include AdditionalConfiguration.php
+!.build/public/typo3conf/
+.build/public/typo3conf/*
+!.build/public/typo3conf/AdditionalConfiguration.php
