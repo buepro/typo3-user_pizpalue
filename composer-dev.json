@@ -56,7 +56,7 @@
 		"typo3/cms-redirects": "^11.5",
 		"typo3/testing-framework": "^6.4"
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"autoload": {
 		"psr-4": {
