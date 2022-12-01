@@ -58,9 +58,6 @@
 		},
 		"bin-dir": ".build/bin",
 		"optimize-autoloader": true,
-		"platform": {
-			"php": "8.1.9"
-		},
 		"sort-packages": true,
 		"vendor-dir": ".build/vendor"
 	},
