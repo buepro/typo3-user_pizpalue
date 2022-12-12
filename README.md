@@ -1,7 +1,8 @@
 # TYPO3 site package `user_pizpalue`
 
+[![TYPO3 11](https://img.shields.io/badge/TYPO3-12-orange.svg)](https://get.typo3.org/version/12)
 [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
-[![Extension pizpalue](https://img.shields.io/badge/Pizpalue-14-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
+[![Extension pizpalue](https://img.shields.io/badge/Pizpalue-15-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
 [![Extension pizpalue_distribution](https://img.shields.io/badge/Pizpalue--Distribution-3-orange.svg)](https://extensions.typo3.org/extension/pizpalue_distribution/)
 [![Total Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/total.svg)](https://packagist.org/packages/buepro/typo3-user-pizpalue)
 [![Monthly Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/monthly)](https://packagist.org/packages/buepro/typo3-user-pizpalue)
@@ -9,7 +10,7 @@
 ---
 
 This extension serves as a site package to customize a TYPO3-website using the template
-[pizpalue](https://github.com/buepro/typo3-pizpalue) in version 14.0.0 and higher.
+[pizpalue](https://github.com/buepro/typo3-pizpalue) in version 15.0.0 and higher.
 
 ## Installation
 
