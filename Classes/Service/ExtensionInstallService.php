@@ -80,7 +80,7 @@ class ExtensionInstallService
                 FlashMessage::class,
                 $GLOBALS['LANG']->sL('LLL:EXT:user_pizpalue/Resources/Private/Language/Backend.xlf:ext_conf.additionalConfigurationChanged'),
                 '',
-                FlashMessage::NOTICE,
+                \TYPO3\CMS\Core\Type\ContextualFeedbackSeverity::NOTICE,
                 true
             );
             $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
