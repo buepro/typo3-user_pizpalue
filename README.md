@@ -1,7 +1,6 @@
 # TYPO3 site package `user_pizpalue`
 
-[![TYPO3 11](https://img.shields.io/badge/TYPO3-12-orange.svg)](https://get.typo3.org/version/12)
-[![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
+[![TYPO3 12](https://img.shields.io/badge/TYPO3-12-orange.svg)](https://get.typo3.org/version/12)
 [![Extension pizpalue](https://img.shields.io/badge/Pizpalue-15-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
 [![Extension pizpalue_distribution](https://img.shields.io/badge/Pizpalue--Distribution-3-orange.svg)](https://extensions.typo3.org/extension/pizpalue_distribution/)
 [![Total Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/total.svg)](https://packagist.org/packages/buepro/typo3-user-pizpalue)

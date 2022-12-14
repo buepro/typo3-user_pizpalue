@@ -1,5 +1,5 @@
 name: user-pizpalue
-type: typo3
+type: php
 docroot: .build/public
 php_version: "8.1"
 webserver_type: apache-fpm
