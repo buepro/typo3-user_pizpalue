@@ -32,7 +32,7 @@ class ExtensionInstallService
      */
     public function afterExtensionInstall(string $extensionKey): void
     {
-        if ('user_pizpalue' !== $extensionKey) {
+        if (Environment::isComposerMode() || 'user_pizpalue' !== $extensionKey) {
             return;
         }
 
