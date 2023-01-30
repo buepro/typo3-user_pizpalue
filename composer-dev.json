@@ -30,11 +30,11 @@
 		"buepro/typo3-pizpalue": "^15.0",
 		"buepro/typo3-pizpalue-distribution": "^6.0.0",
 		"typo3/cms-base-distribution": "^12.1",
-		"typo3/cms-core": "^12.1",
-		"typo3/cms-indexed-search": "^12.1",
-		"typo3/cms-lowlevel": "^12.1",
-		"typo3/cms-recycler": "^12.1",
-		"typo3/cms-redirects": "^12.1"
+		"typo3/cms-core": "^12.2",
+		"typo3/cms-indexed-search": "^12.2",
+		"typo3/cms-lowlevel": "^12.2",
+		"typo3/cms-recycler": "^12.2",
+		"typo3/cms-redirects": "^12.2"
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.15.0",
@@ -49,6 +49,12 @@
 		"phpstan/phpstan-strict-rules": "^1.4.3",
 		"seld/jsonlint": "^1.9",
 		"typo3/testing-framework": "7.x-dev"
+	},
+	"repositories": {
+		"pizpalue": {
+			"type": "path",
+			"url": "/mnt/public/package/typo3-pizpalue"
+		}
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
