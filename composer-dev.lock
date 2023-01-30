@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "968dd58859b79d39e99fb27ed9a0a389",
+    "content-hash": "c2457c1d606398390e75dd8135bab597",
     "packages": [
         {
             "name": "b13/container",
-            "version": "2.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/container.git",
-                "reference": "de4e5f8738098691ec256249a287c2dbb2a321ad"
+                "reference": "b701015a3b55d524dac53d1295a7f9f79ab195f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/container/zipball/de4e5f8738098691ec256249a287c2dbb2a321ad",
-                "reference": "de4e5f8738098691ec256249a287c2dbb2a321ad",
+                "url": "https://api.github.com/repos/b13/container/zipball/b701015a3b55d524dac53d1295a7f9f79ab195f8",
+                "reference": "b701015a3b55d524dac53d1295a7f9f79ab195f8",
                 "shasum": ""
             },
             "require": {
@@ -43,6 +43,7 @@
                 "typo3/coding-standards": "^0.5.0",
                 "typo3/testing-framework": "~7.0@dev"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -65,9 +66,9 @@
             "homepage": "https://b13.com",
             "support": {
                 "issues": "https://github.com/b13/container/issues",
-                "source": "https://github.com/b13/container/tree/2.1.2"
+                "source": "https://github.com/b13/container/tree/master"
             },
-            "time": "2023-01-16T09:43:27+00:00"
+            "time": "2023-01-27T12:51:33+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -238,16 +239,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/buepro/typo3-container_elements.git",
-                "reference": "2ab02fcc9ddd91695856586a19ca679f0af46d8a"
+                "reference": "92b3cddb994c0dc6b8e4e408f2a57c1da04c4b1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buepro/typo3-container_elements/zipball/2ab02fcc9ddd91695856586a19ca679f0af46d8a",
-                "reference": "2ab02fcc9ddd91695856586a19ca679f0af46d8a",
+                "url": "https://api.github.com/repos/buepro/typo3-container_elements/zipball/92b3cddb994c0dc6b8e4e408f2a57c1da04c4b1d",
+                "reference": "92b3cddb994c0dc6b8e4e408f2a57c1da04c4b1d",
                 "shasum": ""
             },
             "require": {
-                "b13/container": "^2.1.1",
+                "b13/container": "^2.1.1 || dev-master",
                 "buepro/typo3-pvh": "^2.0.0",
                 "typo3/cms-core": "^11.5.1 || ^12.1"
             },
@@ -315,7 +316,7 @@
                 "issues": "https://github.com/buepro/typo3-container_elements/issues",
                 "source": "https://github.com/buepro/typo3-container_elements"
             },
-            "time": "2023-01-14T10:29:11+00:00"
+            "time": "2023-01-30T18:57:31+00:00"
         },
         {
             "name": "buepro/typo3-easyconf",
@@ -10879,6 +10880,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "b13/container": 20,
         "typo3/testing-framework": 20
     },
     "prefer-stable": true,
