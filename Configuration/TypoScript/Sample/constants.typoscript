@@ -304,8 +304,8 @@ page.logo {
     height = 140
     width = 390
     fileInverted = EXT:user_pizpalue/Resources/Public/Images/logo_inv.svg
-    alt = {$pizpalue.customer.commonName}
-    linktitle = {$pizpalue.customer.commonName}
+    alt = {$pizpalue.customer.company}
+    linktitle = {$pizpalue.customer.company}
 }
 
 
