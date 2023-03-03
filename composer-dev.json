@@ -30,7 +30,6 @@
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^15.0",
 		"buepro/typo3-pizpalue-distribution": "^6.0.0",
-		"helhum/typo3-console": "dev-main",
 		"typo3/cms-base-distribution": "^12.2 || dev-main",
 		"typo3/cms-core": "^12.2 || dev-main",
 		"typo3/cms-indexed-search": "^12.2 || dev-main",
@@ -115,24 +114,6 @@
 			"@ci:php:lint",
 			"@ci:php:stan"
 		],
-		"ddev:install": [
-			"ddev start",
-			"ddev composer u",
-			"ddev restart",
-			"ddev composer site:install",
-			"ddev launch typo3",
-			"echo 'INFO: Login to BE using admin/admin'"
-		],
-		"ddev:uninstall": [
-			"ddev composer typo3cms:database:export",
-			"ddev delete",
-			"rm -rf .build/",
-			"git checkout '.build/'"
-		],
-		"finalize-installation": [
-			"composer u",
-			".build/bin/typo3cms database:updateschema"
-		],
 		"fix": [
 			"@fix:php:cs"
 		],
@@ -140,21 +121,10 @@
 		"fix:php:cs": [
 			"php-cs-fixer --diff -v fix"
 		],
-		"site:install": [
-			"cp Build/site/config.yaml .build/config/sites/default/config.yaml",
-			"@typo3cms:install:setup",
+		"install": [
+			".build/bin/typo3 setup --no-interaction --driver=mysqli --host=db --port=3306 --dbname=db --username=db --password='db' --admin-username=admin --admin-user-password=admin123ADMIN:) --admin-email='' --project-name='user-pizpalue dev' --force",
 			".build/bin/typo3 extension:setup",
-			"@typo3cms:database:import"
-		],
-		"typo3cms:database:export": [
-			".build/bin/typo3cms database:export -c Default -e 'cf_*' -e 'cache_*' -e '[bf]e_sessions' -e sys_log | gzip -c > Build/site/db.sql.gz",
-			"ls -l Build/site/db.sql.gz"
-		],
-		"typo3cms:database:import": [
-			"gzip -cdk Build/site/db.sql.gz | .build/bin/typo3cms database:import"
-		],
-		"typo3cms:install:setup": [
-			".build/bin/typo3cms install:setup --no-interaction --use-existing-database --database-host-name='db' --database-name='db' --database-user-name='db' --database-user-password='db' --admin-user-name='admin' --admin-password='admin123ADMIN:)' --site-name='user-pizpalue dev' --web-server-config='apache' --skip-extension-setup"
+			"cp .build/vendor/typo3/cms-install/Resources/Private/FolderStructureTemplateFiles/root-htaccess .build/public/.htaccess"
 		]
 	}
 }

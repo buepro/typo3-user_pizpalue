@@ -30,16 +30,12 @@
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^15.0",
 		"buepro/typo3-pizpalue-distribution": "^6.0.0",
-		"helhum/typo3-console": "dev-main",
 		"typo3/cms-base-distribution": "^12.2 || dev-main",
 		"typo3/cms-core": "^12.2 || dev-main",
 		"typo3/cms-indexed-search": "^12.2 || dev-main",
 		"typo3/cms-lowlevel": "^12.2 || dev-main",
 		"typo3/cms-recycler": "^12.2 || dev-main",
 		"typo3/cms-redirects": "^12.2 || dev-main"
-	},
-	"require-dev": {
-
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -72,10 +68,6 @@
 		"post-autoload-dump": [
 			"[ -d .build/public/_assets ] || mkdir -p .build/public/typo3conf/ext/",
 			"[ -d .build/public/_assets ] || [ -L .build/public/typo3conf/ext/user_pizpalue ] || ln -snvf ../../../../. .build/public/typo3conf/ext/user_pizpalue"
-		],
-		"finalize-installation": [
-			"composer u",
-			".build/bin/typo3cms database:updateschema"
 		]
 	}
 }

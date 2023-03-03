@@ -22,33 +22,37 @@ The following steps set up a TYPO3 website using this package as a composer root
 
 2. **Setup TYPO3**
    ```
-   .build/bin/typo3cms install:setup \
+   .build/bin/typo3 setup \
    --no-interaction \
-   --use-existing-database \
-   --database-host-name=127.0.0.1 \
-   --database-port=3306 \
-   --database-name=db \
-   --database-user-name=db \
-   --database-user-password=db \
-   --admin-user-name=admin \
-   --admin-password=password \
-   --site-name="Pizpalue site" \
-   --web-server-config=apache \
-   --skip-extension-setup
+   --driver=mysqli \
+   --host=db \
+   --port=3306 \
+   --dbname=db \
+   --username=db \
+   --password=db \
+   --admin-username=admin \
+   --admin-user-password=password \
+   --admin-email='' \
+   --project-name="Pizpalue site" \
    ```
-   > Extension setup is skipped due to a bug in the package `helhum/typo3-console`.
 
 3. **Setup extensions**
    ```
    .build/bin/typo3 extension:setup
+   composer rem buepro/typo3-pizpalue-distribution
+   ```
+   > NOTE: We remove the distribution since the page tree and assets have been loaded by setting up the extensions.
+
+4. **Copy `htaccess`**
+   ```
+   cp .build/vendor/typo3/cms-install/Resources/Private/FolderStructureTemplateFiles/root-htaccess .build/public/.htaccess
    ```
 
-4. **Review `composer.json`**
+5. **Review `composer.json`**
 
     1. Define packages
 
-       Remove the dependency to `"buepro/typo3-pizpalue-distribution"` and all packages not required by the
-       site.
+       Remove the dependency to packages not required by the site.
        > NOTE: Just use the needed packages. In many projects just `buepro/typo3-pizpalue` and
        `buepro/typo3-container-elements` are required.
 
@@ -65,9 +69,9 @@ The following steps set up a TYPO3 website using this package as a composer root
        }
        ```
 
-5. **Finalize installation**
+6. **Finalize installation**
    ```
-   composer finalize-installation
+   .build/bin/typo3 cache:warmup
    ```
 
 ## Usage
@@ -142,8 +146,6 @@ page {
 
 ## Development
 
-- Install environment: `composer ddev:install`
-- Uninstall environment: `composer ddev:uninstall`
 - Test code: `ddev composer ci`
 - Fix code: `ddev composer fix`
 
