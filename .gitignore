@@ -1,5 +1,6 @@
 # Root folders
-/.build/
+!/.build/
+/.build/*
 /.idea/
 /Build/node_modules
 /Documentation-GENERATED-temp/
@@ -12,7 +13,6 @@
 # Files
 *.cache
 *.zip
-.gitkeep
 /config/sites/development/config.yaml
 
 # Include easyconf configurations
