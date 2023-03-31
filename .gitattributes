@@ -1,10 +1,12 @@
 # Folders
 /Build export-ignore
 /Tests export-ignore
+/config/sites/development export-ignore
 
 # Files
 /composer-dev.* export-ignore
 /composer.lock export-ignore
+/config/system/settings.php export-ignore
 
 # Hidden elements
 /.* export-ignore
