@@ -80,6 +80,9 @@ return [
             'enableBootstrapPackageContainerElements' => '0',
             'enableDefaultPageTSconfig' => '1',
         ],
+        'pizpalue_distribution' => [
+            'installUserExtension' => '1',
+        ],
         'user_pizpalue' => [
             'addAdditionalConfiguration' => '1',
             'forceAdditionalConfiguration' => '0',
@@ -153,6 +156,9 @@ return [
         'displayErrors' => 0,
         'encryptionKey' => 'aea78960c7bdc5e3217f90eabc361e3c7cfe74c59c459da53e1fddc75bd6a95b9318d6bbb93072d8458f90c60b19c3b9',
         'exceptionalErrors' => 4096,
+        'features' => [
+            'security.usePasswordPolicyForFrontendUsers' => true,
+        ],
         'sitename' => 'user_pizpalue dev',
         'systemMaintainers' => [
             1,
