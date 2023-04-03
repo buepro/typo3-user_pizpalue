@@ -30,6 +30,7 @@
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^15.0",
 		"buepro/typo3-pizpalue-distribution": "^6.0.0",
+		"georgringer/news": "^11.0.0",
 		"typo3/cms-base-distribution": "^12.2 || dev-main",
 		"typo3/cms-core": "^12.2 || dev-main",
 		"typo3/cms-indexed-search": "^12.2 || dev-main",
