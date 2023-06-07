@@ -24,6 +24,7 @@
 		"issues": "https://github.com/buepro/typo3-user_pizpalue/issues",
 		"source": "https://github.com/buepro/typo3-user_pizpalue"
 	},
+	"prefer-stable": true,
 	"require": {
 		"buepro/typo3-container-elements": "^5.0.0",
 		"buepro/typo3-easyconf": "^2.0.0",
