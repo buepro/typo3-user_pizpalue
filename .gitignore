@@ -1,25 +1,28 @@
-# Root folders
+# Folders
 !/.build/
 /.build/*
+!/.build/public/
+/.build/public/*
+!/.build/public/fileadmin/
+/.build/public/fileadmin/*
 /.idea/
 /Build/node_modules
 /Documentation-GENERATED-temp/
 /var/
 
-# Root files
+# Files
 /.ddev/docker-compose.mount.yaml
 /composer-dev.lock
-
-# Files
 *.cache
 *.zip
 /config/sites/development/config.yaml
 
+# Include user_pizpalue configuration
+!/.build/public/fileadmin/user_pizpalue/
+/.build/public/fileadmin/user_pizpalue/*
+!/.build/public/fileadmin/user_pizpalue/customforms
+
 # Include easyconf configurations
-!/.build/public/
-/.build/public/*
-!/.build/public/fileadmin/
-/.build/public/fileadmin/*
 !/.build/public/fileadmin/easyconf/
 !/.build/public/fileadmin/pizpalue/
 /.build/public/fileadmin/pizpalue/*
@@ -27,7 +30,8 @@
 /.build/public/fileadmin/pizpalue/extensions/*
 !/.build/public/fileadmin/pizpalue/extensions/easyconf/
 
-# Include AdditionalConfiguration.php
+# Include cms configuration
 !/.build/public/typo3conf/
 /.build/public/typo3conf/*
 !/.build/public/typo3conf/AdditionalConfiguration.php
+!/.build/public/typo3conf/LocalConfiguration.php
