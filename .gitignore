@@ -17,6 +17,11 @@
 *.zip
 /config/sites/development/config.yaml
 
+# Include pizpalue configuration
+!/.build/public/fileadmin/pizpalue/
+/.build/public/fileadmin/pizpalue/*
+!/.build/public/fileadmin/pizpalue/forms
+
 # Include user_pizpalue configuration
 !/.build/public/fileadmin/user_pizpalue/
 /.build/public/fileadmin/user_pizpalue/*
@@ -24,8 +29,6 @@
 
 # Include easyconf configurations
 !/.build/public/fileadmin/easyconf/
-!/.build/public/fileadmin/pizpalue/
-/.build/public/fileadmin/pizpalue/*
 !/.build/public/fileadmin/pizpalue/extensions/
 /.build/public/fileadmin/pizpalue/extensions/*
 !/.build/public/fileadmin/pizpalue/extensions/easyconf/
