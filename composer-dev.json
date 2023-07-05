@@ -29,13 +29,14 @@
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^15.0.0",
 		"buepro/typo3-pizpalue-distribution": "^6.0.0",
+		"friendsoftypo3/tt-address": "^8.0.1",
 		"georgringer/news": "^11.0.0",
-		"typo3/cms-base-distribution": "^12.2 || dev-main",
-		"typo3/cms-core": "^12.2 || dev-main",
-		"typo3/cms-indexed-search": "^12.2 || dev-main",
-		"typo3/cms-lowlevel": "^12.2 || dev-main",
-		"typo3/cms-recycler": "^12.2 || dev-main",
-		"typo3/cms-redirects": "^12.2 || dev-main"
+		"typo3/cms-base-distribution": "^12.4 || dev-main",
+		"typo3/cms-core": "^12.4 || dev-main",
+		"typo3/cms-indexed-search": "^12.4 || dev-main",
+		"typo3/cms-lowlevel": "^12.4 || dev-main",
+		"typo3/cms-recycler": "^12.4 || dev-main",
+		"typo3/cms-redirects": "^12.4 || dev-main"
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.15.0",
@@ -77,7 +78,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "5.0.x-dev"
+			"dev-main": "5.1.x-dev"
 		},
 		"typo3/cms": {
 			"extension-key": "user_pizpalue",
