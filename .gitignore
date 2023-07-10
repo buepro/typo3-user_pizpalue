@@ -15,7 +15,7 @@
 /composer-dev.lock
 *.cache
 *.zip
-/config/sites/development/config.yaml
+/config/sites/development
 
 # Include pizpalue configuration
 !/.build/public/fileadmin/pizpalue/

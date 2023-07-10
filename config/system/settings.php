@@ -47,6 +47,7 @@ return [
         ],
         'container_elements' => [
             'autoLoadStaticTS' => '1',
+            'collapsibleContentElements' => '1',
             'showDeprecatedItems' => '1',
         ],
         'extensionmanager' => [
@@ -74,6 +75,23 @@ return [
             'useMysqlFulltext' => '0',
             'xlhtml' => '/usr/bin/',
         ],
+        'news' => [
+            'advancedMediaPreview' => '1',
+            'archiveDate' => 'date',
+            'categoryBeGroupTceFormsRestriction' => '0',
+            'categoryRestriction' => '',
+            'contentElementRelation' => '1',
+            'dateTimeNotRequired' => '0',
+            'hidePageTreeForAdministrationModule' => '0',
+            'manualSorting' => '0',
+            'prependAtCopy' => '1',
+            'resourceFolderImporter' => '/news_import',
+            'rteForTeaser' => '0',
+            'showAdministrationModule' => '1',
+            'slugBehaviour' => 'unique',
+            'storageUidImporter' => '1',
+            'tagPid' => '1',
+        ],
         'pizpalue' => [
             'autoLoadStaticTSForExtensions' => '1',
             'enableBootstrapPackageBackendLayouts' => '0',
@@ -82,6 +100,11 @@ return [
         ],
         'pizpalue_distribution' => [
             'installUserExtension' => '1',
+        ],
+        'tt_address' => [
+            'backwardsCompatFormat' => '%1$s %3$s',
+            'readOnlyNameField' => '1',
+            'storeBackwardsCompatName' => '1',
         ],
         'user_pizpalue' => [
             'addAdditionalConfiguration' => '1',
