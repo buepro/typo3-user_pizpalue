@@ -26,6 +26,7 @@
 !/.build/public/fileadmin/user_pizpalue/
 /.build/public/fileadmin/user_pizpalue/*
 !/.build/public/fileadmin/user_pizpalue/customforms
+!/.build/public/fileadmin/user_pizpalue/design
 
 # Include easyconf configurations
 !/.build/public/fileadmin/easyconf/
