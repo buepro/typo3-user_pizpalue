@@ -333,7 +333,6 @@ page.theme {
             twitter.url = https://twitter.com/typo3
             instagram.url = https://www.instagram.com/
             github.url = https://github.com/buepro/typo3-pizpalue
-            googleplus.url =
             linkedin.url = https://www.linkedin.com/
             xing.url = https://www.xing.com/
             youtube.url = https://www.youtube.com/user/typo3
