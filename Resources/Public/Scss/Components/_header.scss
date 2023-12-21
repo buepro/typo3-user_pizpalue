@@ -6,3 +6,7 @@
 //.navbar-mainnavigation .navbar-brand-image img {
 //    max-height: calc(var(--mainnavigation-nav-height) - 30px);
 //}
+
+.navbar-mainnavigation {
+    --mainnavigation-hightlight: var(--bs-navbar-active-color);
+}
