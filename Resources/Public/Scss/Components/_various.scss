@@ -90,6 +90,6 @@ $up-max-image-width: 2000px !default;
 //
 // Cookie dialog
 // --------------------------------------------------
-#cookieconsent .cc-revoke {
+#cookieconsent .cc-revoke:not(.cc-animate) {
     padding: 0 0.5rem;
 }
