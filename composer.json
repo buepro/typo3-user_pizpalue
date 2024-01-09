@@ -29,7 +29,7 @@
 		"buepro/typo3-container-elements": "^5.0.0",
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^16.0.0",
-		"buepro/typo3-pizpalue-distribution": "^7.0.0",
+		"buepro/typo3-pizpalue-distribution": "^7.0.1@dev",
 		"friendsoftypo3/tt-address": "^8.0.1",
 		"georgringer/news": "^11.0.0",
 		"typo3/cms-base-distribution": "^12.4",
