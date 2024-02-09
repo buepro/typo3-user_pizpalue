@@ -33,7 +33,7 @@
 		"friendsoftypo3/tt-address": "^8.0.1",
 		"georgringer/news": "^11.0.0",
 		"typo3/cms-base-distribution": "^12.4",
-		"typo3/cms-core": "^12.4",
+		"typo3/cms-core": "12.4.9",
 		"typo3/cms-indexed-search": "^12.4",
 		"typo3/cms-lowlevel": "^12.4",
 		"typo3/cms-recycler": "^12.4",

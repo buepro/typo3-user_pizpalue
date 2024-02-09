@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = [
             'pizpalue' => '16.0.0-99.99.99',
             'pizpalue_distribution' => '7.0.0-7.99.99',
             'tt_address' => '8.0.1-8.99.99',
-            'typo3' => '12.4.0-12.99.99',
+            'typo3' => '12.4.9',
         ],
         'conflicts' => [
         ],
