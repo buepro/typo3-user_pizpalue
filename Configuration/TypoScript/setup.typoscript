@@ -34,11 +34,8 @@ page {
 plugin {
     tx_news {
         _LOCAL_LANG {
-            default {
-                dateFormat = {$pizpalue.general.dateFormat}
-            }
             de {
-                dateFormat = {$pizpalue.general.dateFormat}
+                dateFormat = {$pizpalue.general.dateStrftimeFormat}
             }
         }
     }
