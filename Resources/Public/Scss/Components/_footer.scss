@@ -2,6 +2,9 @@
     ul {
         margin-bottom: 0;
     }
+    .frame-header {
+        margin-bottom: calc(.5 * var(--up-headings-margin-bottom));
+    }
     .footer-info-section {
         margin-top: 0;
     }
