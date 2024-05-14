@@ -9,6 +9,7 @@
 //         hoverDropdownElements.forEach(dropdownElement => {
 //             const link = dropdownElement.parentElement.querySelector('a');
 //             link.addEventListener('mouseenter', evt => {
+//                 if (window.innerWidth < 992) return;
 //                 hoverDropdownElements.forEach(possibleActiveDropdown => (new bootstrap.Dropdown(possibleActiveDropdown)).hide());
 //                 (new bootstrap.Dropdown(dropdownElement)).show();
 //             });
