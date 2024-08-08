@@ -29,15 +29,18 @@
 		"buepro/typo3-container-elements": "^5.0.0",
 		"buepro/typo3-easyconf": "^2.0.0",
 		"buepro/typo3-pizpalue": "^16.0.0",
-		"buepro/typo3-pizpalue-distribution": "^7.0.1@dev",
 		"friendsoftypo3/tt-address": "^8.0.1",
 		"georgringer/news": "^11.0.0",
 		"typo3/cms-base-distribution": "^12.4",
-		"typo3/cms-core": "12.4.9",
 		"typo3/cms-indexed-search": "^12.4",
+		"typo3/cms-core": "^12.4",
 		"typo3/cms-lowlevel": "^12.4",
 		"typo3/cms-recycler": "^12.4",
 		"typo3/cms-redirects": "^12.4"
+	},
+	"require-dev": {
+		"typo3/cms-core": "12.4.16",
+		"buepro/typo3-pizpalue-distribution": "^7.0.1@dev"
 	},
 	"autoload": {
 		"psr-4": {
