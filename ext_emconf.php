@@ -18,16 +18,12 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '6.0.2-dev',
+    'version' => '7.0.0-dev',
     'constraints' => [
         'depends' => [
-            'container_elements' => '5.0.0-5.99.99',
-            'easyconf' => '2.0.0-2.99.99',
-            'news' => '11.0.0-11.99.99',
-            'pizpalue' => '16.0.0-99.99.99',
-            'pizpalue_distribution' => '7.0.0-7.99.99',
-            'tt_address' => '8.0.1-8.99.99',
-            'typo3' => '12.4.9',
+            'container_elements' => '6.0.0-6.99.99',
+            'pizpalue' => '17.0.0-99.99.99',
+            'typo3' => '12.4.9-13.99.99',
         ],
         'conflicts' => [
         ],
