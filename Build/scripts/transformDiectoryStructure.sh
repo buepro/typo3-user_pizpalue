@@ -14,4 +14,5 @@ rm -rf ./build
 echo "{}" > composer.json
 composer config name buepro/typo3-pizpalue-installation
 composer config repositories.local path ./packages/*
-composer require buepro/typo3-user-pizpalue:@dev
+composer require buepro/typo3-user-pizpalue:dev-customer
+
