@@ -1,6 +1,5 @@
 # TYPO3 site package `user_pizpalue`
 
-[![TYPO3 12](https://img.shields.io/badge/TYPO3-12-orange.svg)](https://get.typo3.org/version/12)
 [![TYPO3 13](https://img.shields.io/badge/TYPO3-13-orange.svg)](https://get.typo3.org/version/13)
 [![Extension pizpalue](https://img.shields.io/badge/Pizpalue-17-orange.svg)](https://extensions.typo3.org/extension/pizpalue/)
 [![Total Downloads](https://poser.pugx.org/buepro/typo3-user-pizpalue/d/total.svg)](https://packagist.org/packages/buepro/typo3-user-pizpalue)
@@ -9,48 +8,30 @@
 ---
 
 This extension serves as a site package to customize a TYPO3-website using the template
-[pizpalue](https://github.com/buepro/typo3-pizpalue) in version 15.0.0 and higher.
+[pizpalue](https://github.com/buepro/typo3-pizpalue) in version 17.0.0 and higher.
 
-## Installation
+## Installation hints
 
-The following steps set up a TYPO3 website using this package as a composer root package.
+- The official installation guide can be found at [typo3.org](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Administration/Installation/Index.html#installation_index).
 
-1. **Get source code**
-   ```
-   composer create-project buepro/typo3-user-pizpalue && cd typo3-user-pizpalue && composer u
-   ```
+- Install this package with:
+  ```
+  composer req buepro/typo3-user-pizpalue
+  ```
 
-2. **Setup TYPO3**
-   ```
-   .build/bin/typo3 setup \
-   --no-interaction \
-   --driver=mysqli \
-   --host=db \
-   --port=3306 \
-   --dbname=db \
-   --username=db \
-   --password=db \
-   --admin-username=admin \
-   --admin-user-password=password \
-   --admin-email='' \
-   --project-name="Pizpalue site" \
-   ```
+- To add a demo site you might use:
+  ```
+  composer req buepro/typo3-pizpalue-distribution
+  ```
 
-3. **Setup extensions**
-   ```
-   .build/bin/typo3 extension:setup
-   composer rem buepro/typo3-pizpalue-distribution
-   ```
-   > NOTE: We remove the distribution since the page tree and assets have been loaded by setting up the extensions.
-
-4. **Copy `htaccess`**
+- Copy `htaccess`
    ```
    cp .build/vendor/typo3/cms-install/Resources/Private/FolderStructureTemplateFiles/root-htaccess .build/public/.htaccess
    ```
 
-5. **Review `composer.json`**
+- Review `composer.json`<br><br>
 
-    1. Define packages
+    1. **Define packages**
 
        Remove the dependency to packages not required by the site.
        > NOTE: Just use the needed packages. In many projects just `buepro/typo3-pizpalue` and
@@ -69,7 +50,7 @@ The following steps set up a TYPO3 website using this package as a composer root
        }
        ```
 
-6. **Finalize installation**
+- Finalize installation
    ```
    .build/bin/typo3 cache:warmup
    ```
@@ -125,7 +106,7 @@ page {
 }
 ```
 
-Now your ready to use the icon font in the markup: `<i class="upicon upicon-custom1"></i>` would render an icon showing
+Now you are ready to use the icon font in the markup: `<i class="upicon upicon-custom1"></i>` would render an icon showing
 the graphic defined by `custom1.svg`.
 
 ### Layouts/Templates/Partials

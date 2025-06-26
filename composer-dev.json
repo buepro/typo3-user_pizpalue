@@ -25,18 +25,14 @@
 		"source": "https://github.com/buepro/typo3-user_pizpalue"
 	},
 	"require": {
-		"buepro/typo3-container-elements": "^6.0.0@dev",
+		"buepro/typo3-container-elements": "^7.0.0",
 		"buepro/typo3-pizpalue": "^17.0.0@dev",
 		"ergebnis/composer-normalize": "^2.43.0",
-		"typo3/cms-core": "^12.4 || ^13.2",
-		"typo3/cms-indexed-search": "^12.4 || ^13.2",
-		"typo3/cms-lowlevel": "^12.4 || ^13.2",
-		"typo3/cms-recycler": "^12.4 || ^13.2",
-		"typo3/cms-redirects": "^12.4 || ^13.2"
-	},
-	"require-dev": {
-		"buepro/typo3-pvh": "^3.0.0@dev",
-		"typo3/cms-core": "12.4.16"
+		"typo3/cms-core": "^13.4",
+		"typo3/cms-indexed-search": "^13.4",
+		"typo3/cms-lowlevel": "^13.4",
+		"typo3/cms-recycler": "^13.4",
+		"typo3/cms-redirects": "^13.4"
 	},
 	"repositories": {
 		"pizpalue": {
@@ -58,6 +54,9 @@
 		},
 		"bin-dir": ".build/bin",
 		"optimize-autoloader": true,
+		"platform": {
+			"php": "8.2"
+		},
 		"sort-packages": true,
 		"vendor-dir": ".build/vendor"
 	},
